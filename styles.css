@@ -422,6 +422,7 @@ a:where(:hover, :focus-visible) {
   width: 100%;
   min-height: 80vh;
   padding: 1rem 0 3rem 0;
+  position: relative;
 
   h2 {
     margin-top: 5rem;
@@ -504,6 +505,19 @@ a:where(:hover, :focus-visible) {
   }
 }
 
+.carousel--hearts {
+  background-image: url("/img/hearts.svg");
+  background-size: contain;
+  background-position: initial;
+  background-repeat: no-repeat;
+  left: 80%;
+  top: 30%;
+  z-index: 1000;
+  position: absolute;
+  width: 20%;
+  height: 20%;
+}
+
 .content__posts {
   display: flex;
   flex-direction: column;
@@ -511,6 +525,7 @@ a:where(:hover, :focus-visible) {
   width: 100%;
   min-height: 105vh;
   background-color: #faf9f6;
+  position: relative;
 
   .content__posts--text {
     flex: 1;
@@ -528,6 +543,31 @@ a:where(:hover, :focus-visible) {
       font-size: 0.9rem;
       max-width: 53%;
     }
+  }
+
+  .content__posts__decoration--left {
+    background-image: url("/img/cardLeftDecoration.svg");
+    background-size: contain;
+    background-position: initial;
+    background-repeat: no-repeat;
+    left: -1%;
+    top: 25%;
+    z-index: 1000;
+    position: absolute;
+    width: 35%;
+    height: 35%;
+  }
+  .content__posts__decoration--right {
+    background-image: url("/img/cardRightDecoration.svg");
+    background-size: contain;
+    background-position: initial;
+    background-repeat: no-repeat;
+    right: -18%;
+    top: 50%;
+    z-index: 1000;
+    position: absolute;
+    width: 25%;
+    height: 25%;
   }
 
   .content__posts--cards {
